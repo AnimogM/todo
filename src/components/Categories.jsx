@@ -18,7 +18,7 @@ const Categories = () => {
     useTodoContextApi();
 
   return (
-    
+
     <Box
       transition="1s ease"
       transform={{
@@ -26,7 +26,7 @@ const Categories = () => {
         lg: "translate(0)",
       }}
       position="fixed"
-      h="95%"
+      h={{base: "full", md:"95%"}}
       zIndex={2}
       w={{ base: "full", md: "40%", lg: "25%" }}
       bgColor="white"
