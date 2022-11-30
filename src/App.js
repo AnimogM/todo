@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Flex } from "@chakra-ui/react";
+
+import Categories from "./components/Categories";
+import Index from "./components/Index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box bgColor="brand.700">
+      <Flex minH="100vh">
+        <Categories />
+
+        <Box
+          p={{ base: 5, md: 10, lg: 16 }}
+          w={{ base: "full", lg: "75%" }}
+          ms={{ base: "unset", lg: "25%" }}
+          transition="1s ease"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Index />
+        </Box>
+      </Flex>
+    </Box>
   );
 }
 
