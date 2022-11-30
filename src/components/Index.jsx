@@ -37,7 +37,7 @@ const Index = () => {
       <Heading fontFamily="cursive" color="brand.800" textAlign="center" mb="5">
         {currentTodos[0].category} - List
       </Heading>
-      <HStack mb="5" justify="space-between" w="full">
+      <HStack mb="5" justify="space-between" align="baseline" w="full">
         <form onSubmit={searchTask}>
           <InputGroup>
             <Input
