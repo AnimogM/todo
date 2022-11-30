@@ -29,7 +29,7 @@ const Categories = () => {
       zIndex={2}
       w={{ base: "full", md: "40%", lg: "25%" }}
       bgColor="white"
-      m="4"
+      m={{ base: 0, md: "4" }}
       rounded="lg"
       py="7"
       px="3"

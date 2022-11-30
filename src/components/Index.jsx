@@ -29,6 +29,7 @@ const Index = () => {
         display={{ base: "block", lg: "none" }}
         position="absolute"
         right="0"
+        zIndex={10}
         top={0}
       >
         <GrMenu onClick={() => setOpen(!open)} cursor="pointer" size={22} />
