@@ -18,6 +18,7 @@ const Categories = () => {
     useTodoContextApi();
 
   return (
+    
     <Box
       transition="1s ease"
       transform={{
